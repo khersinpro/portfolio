@@ -181,6 +181,10 @@ footer {
     .contact-title-container h2{
         font-size: 35px;
     }
+    .container-form {
+        margin: 0 auto;
+        width: 90%;
+    }
 }
 @media(max-width:500px){
     .contact-title-container{
