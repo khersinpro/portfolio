@@ -74,8 +74,10 @@
     opacity: 0;
 }
 /* item hover effect */
-.item:hover .item-hover-info{
-    bottom: 0;
+@media (min-width: 992px) {
+    .item:hover .item-hover-info{
+        bottom: 0;
+    }
 }
 .item-hover-info{
     position: absolute;
@@ -216,6 +218,9 @@
     .portfolio-title-container{
         grid-template-columns: 1fr 350px 1fr;
         padding: 0px 20px 40px 20px;
+    }
+    .item-hover-info.openResponsive{
+        bottom: 0;
     }
 }
 @media (max-width: 700px) {

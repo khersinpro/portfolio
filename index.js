@@ -45,6 +45,28 @@ function myFunction() {
 myFunction()
 //*** END of navBar animation scroll ***// 
 
+//*** Portfolio open info onclick on tablet/mobile device  ***/
+const allPortfolioItems = document.querySelectorAll(".item");
+
+if(window.matchMedia('(max-width:992px)').matches){
+    allPortfolioItems.forEach(item => {
+        item.addEventListener('click', e => {
+            item.querySelector('.item-hover-info').classList.toggle('openResponsive');
+            item.querySelectorAll("button").forEach(item => {
+                item.addEventListener('click', e => {
+                    e.stopPropagation()
+                })
+            })
+        })
+    })
+    window.addEventListener("scroll" , () => {
+        allPortfolioItems.forEach(item => {
+            item.querySelector('.item-hover-info').classList.remove('openResponsive')
+        })
+    }) 
+}
+//*** END of Portfolio open info onclick on tablet/mobile device  ***/
+
 //*** TypeWriter annimation ***//
 const txtAnim = document.querySelector('.txt-animation')
 let typewriter = new Typewriter(txtAnim, {
