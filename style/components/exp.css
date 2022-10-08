@@ -1,0 +1,159 @@
+/*********************************** SECTION EXP ****************************************/
+
+.travail-exp {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    padding-bottom: 100px;
+    padding-top: 70px;
+    background: #0E0E0E;
+}
+
+.titre-travail-exp {
+    text-align: center;
+    margin: 0 0 70px;
+    font-size: 40px;
+    color: #343352;
+}
+.cont-exp-travail {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.barre-verticale {
+    height: 560px;
+    width: 5px;
+    background: #343352;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: -30px;
+}
+.boule-ico {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #343352;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boule-ico img {
+    width: 25px;
+}
+.flex-cont-bloc-exp {
+    width: 800px;
+    flex-shrink: 1;
+    height: 500px;
+    position: relative;
+}
+.bloc{
+    width: 100%;
+    height: 220px;
+    margin-bottom: 37.5px;
+    cursor: pointer;
+    border: 1px solid #14213d;
+    position: relative;
+}
+.contenu-bloc{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    background: #9aa0a6;
+    transition: transform 0.25s ease-in-out;
+    position: relative;
+    transform: translate(10px, -10px);
+}
+.contenu-bloc:hover{
+    transform: translate(0px, 0px);
+}
+.bloc1 {
+    background: #fb97a0;
+}
+.bloc2 {
+    background: #bfe2ca;
+}
+.bloc3 {
+    background: #a6daef;
+}
+.bloc4 {
+    background: #d0e2ec;
+}
+.titre-section-bloc {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+/* Media section travail exp */
+@media(max-width: 1300px) {
+    .travail-exp {
+        width: 100%;
+        padding: 70px 0 100px;
+    }
+}
+@media(max-width: 950px) {
+    .barre-verticale {
+        height: 630px;
+    }
+    .bloc {
+        height: 250px;
+        margin-bottom: 37.5px;
+    }
+    .barre-verticale{
+        margin-left: 60px;
+    }
+    .flex-cont-bloc-exp {
+        margin-right: 30px;
+    }
+    .titre-travail-exp{
+        font-size: 35px;
+    }
+}
+@media(max-width: 665px){
+    .barre-verticale {
+        height: 730px;
+    }
+    .bloc {
+        height: 300px;
+
+    }
+}
+@media(max-width: 520px) {
+    .txt-section  {
+        font-size: 16px;
+    }
+    .bloc {
+        height: 400px;
+    }
+    .barre-verticale {
+        height: 930px;
+    }
+    .titre-section-bloc {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+}
+@media(max-width: 450px) {
+    .txt-section  {
+        font-size: 16px;
+    }
+    .bloc {
+        height: 450px;
+    }
+    .barre-verticale {
+        height: 1030px;
+    }
+    .titre-section-bloc {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+}
+@media(max-width: 380px) {
+        .txt-section {
+            font-size: 15px;
+        }
+}

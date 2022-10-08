@@ -1,0 +1,32 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* font-family: "Poppins", sans-serif; */
+    font-family: 'Inter', sans-serif!important;
+    background: #F1F1F1;
+
+}
+
+.circle-absolute{
+    position: absolute;
+    left: -500px;
+    top: -250px;
+    z-index: 1;
+    height: 1000px;
+    width: 1000px;
+    display: none;
+}
+.wave-absolute{
+    position: absolute;
+    transform: rotate(180deg);
+    right: 0;
+    height: 130%;
+    display: none;
+}
+

@@ -1,0 +1,230 @@
+/***************** HOME *****************/
+header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.accueil{
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+h1{
+    padding-top: 180px;
+    font-size: 80px;
+    font-family: 'Inter', sans-serif;
+    margin: 0 60px;
+    color: #091434;
+    font-weight: 400;
+    transform: translateY(-110px);
+    opacity: 0;
+}
+.txt-animation{
+    font-size: 30px;
+    margin: 10px 0  10px 60px;
+    color: #343352;
+    position: relative;
+    z-index: 1;
+}
+.btn-acc{
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    background: #343352;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    border-radius: 2px;
+    font-size: 18px;
+    opacity: 0;
+    transform: scaleY(0);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-acc1{
+    margin: 10px 0 0 60px;
+    font-weight: 700;
+}
+.btn-acc2{
+    background: transparent;
+    border: 3px solid #343352;
+    color: #343352;
+    font-weight: 700;
+}
+.medias{
+    display: flex;
+    margin: 30px 0 0 60px;
+    position: relative;
+    z-index: 1;
+}
+.media{
+    height: 60px;
+    width: 60px;
+    background-color: #343352;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+.icone-medias{
+    width: 30px;
+}
+.media-svg{
+    position: absolute;
+    z-index: 0;
+    width: 60%;
+    background: transparent;
+    transform: rotate3d(0,1,0,-180deg);
+    top: 250px;
+    right:-100px;
+}
+.bg-desk{
+    position: absolute;
+    bottom: 0px;
+    left: -10px;
+    width: 105%;
+    height: 40%;
+    transform: rotate(180deg);
+
+}
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 8px #14213d0a ;
+    }
+}
+.logo-btn-rond-acc{
+    width: 35px;
+}
+/* media home */
+@media(max-width:1200px) {
+    h1{
+        font-size: 70px;
+        margin: 0 30px 0 30px;
+        padding-top: 100px;
+    }
+    .accueil p{
+        margin: 20px 0 20px 30px;
+    }
+    .btn-acc1{
+        margin: 10px 0 0 30px;
+    }
+    .medias{
+        margin-left: 30px;
+    }
+    .media-svg{
+        width: 70%;
+        bottom: 25px;
+        top: unset;
+    }
+    .bg-desk{
+        height: 30%;
+    }
+}
+@media(max-width: 992px) {
+    .media-svg{
+        display: none;
+    }
+}
+@media(max-width: 700px){
+    h1{
+        font-size:50px ;
+        margin: 0 30px;
+        padding-top: 150px;
+    }
+    .accueil p {
+        font-size: 20px;
+    }
+
+}
+@media(max-width: 500px) {
+    .accueil{
+        padding-left: 15px;
+    }
+    h1{
+        font-size: 45px;
+        font-weight: 700;
+    }
+    .accueil p{
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .btn-acc{
+        width: 140px;
+        font-size: 13px;
+        height: 40px;
+        margin:10px 0 10px 0px ;
+    }
+    .btn-acc1{
+        margin:10px 0 0 30px ;
+    }
+    .media{
+        width: 40px;
+        height: 40px;
+    }
+    .icone-medias{
+        width: 20px;
+    }
+    .bg-desk{
+        height: 70px;
+    }
+}
+@media(max-width: 450px){
+    .btn-rond-menu{
+        width: 50px;
+        height: 50px;
+    }
+    .cont-ligne{
+        width: 20px;
+        height: 38px;
+    }
+    .ligne-unique{
+        height: 3px;
+    }
+    .ligne-unique::after{
+        top: 8px;
+        height: 3px;
+    }
+    .ligne-unique::before{
+        bottom: 8px;
+        height: 3px;
+    }
+    h1{
+        margin: 0 30px 0 5px;
+        padding-top: 120px;
+    }
+    .accueil p {
+        margin: 0 30px 0 5px;
+    }
+    .btn-acc{
+        width: 100px;
+        font-size: 12px;
+        height: 35px;
+        margin: 30px 0 0 5px;
+    }
+    .medias{
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+    .icone-medias{
+        width: 20px;
+    }
+}
+@media(max-width: 390px) {
+    .txt-animation{
+        font-size: 15px!important;
+    }
+}
+@media(max-width: 370px) {
+    .txt-animation{
+        font-size: 13px!important;
+    }
+}

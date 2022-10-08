@@ -1,0 +1,122 @@
+/***************** NAVBAR *****************/
+.nav-left{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: row;
+}
+@media (min-width: 992px) {
+    .nav-left.color{
+        height: 60px;
+        background: #09143483;
+        background: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .nav-left.color span::after{
+        background: white;
+    }
+    .nav-left.remove{
+        transform: translateY(-80px);
+    }
+}
+#nav-logo{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+}
+.blocs-menu{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blocs-menu span {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+    cursor: pointer;
+}
+.blocs-menu span a{
+    text-decoration: none;
+    color: white;
+    color: #091434;
+    font-weight: 500;
+    transition: 0.6 ease;
+}
+.blocs-menu span::after{
+    content: "";
+    display: block;
+    width: 0px;
+    margin: 5px auto 0 auto;
+    height: 2px;
+    border-radius: 2px;
+    background-color:#091434;
+    transition: all 0.2s;
+}
+.blocs-menu span:hover::after{
+    width: 100%;
+}
+
+@media(max-width:992px) {
+    .nav-left{
+        width: 240px;
+        height: 100%;
+        position: fixed;
+        left: -240px;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        padding-top: 150px;
+    }
+    .nav-left.active {
+        left: 0;
+    }
+    .blocs-menu{
+        width: 100%;
+        height: 35px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 50px;
+        margin-bottom: 30px;
+    }
+    .blocs-menu span {
+        font-size: 23px;
+        text-align: center;
+        position: relative;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .blocs-menu span a{
+        text-decoration: none;
+        color: white;
+        color: #091434;
+        font-weight: 500;
+        transition: 0.6 ease;
+    }
+    .blocs-menu span::after{
+        content: "";
+        display: block;
+        width: 0px;
+        margin: 5px auto 0 auto;
+        height: 2px;
+        border-radius: 2px;
+        background-color:#091434;
+        transition: all 0.2s;
+    }
+    .blocs-menu span:hover::after{
+        width: 100%;
+    }
+}

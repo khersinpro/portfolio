@@ -1,0 +1,52 @@
+/* burger button animation */
+.burger{
+    height: 26px;
+    width: 32px;
+    display: none;
+    flex-direction: column;
+    z-index: 4;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+}
+.burger--line{
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background: #000;
+}
+.burger--line1{
+    transform: rotate(0deg);
+    transform-origin: 0% 0%;
+    transition: transform 0.2s;
+}
+.burger--line2{
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+.burger--line3{
+    transform: rotate(0deg);
+    transform-origin: 0% 100%;
+    transition: transform 0.2s;
+}
+/* burger active */
+.burger.active  .burger--line1{
+    transform: rotate(47deg);
+}
+.burger.active .burger--line2{
+    opacity: 0;
+}
+.burger.active .burger--line3{
+    transform: rotate(-47deg);
+}
+@media (max-width: 992px) {
+    .burger{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

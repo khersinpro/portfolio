@@ -1,0 +1,120 @@
+/************************************** SECTION RANGE *******************************************/
+.section-range{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    background: #171717;
+    background: #9368332a;
+    background-color: #DEF2F1;
+    background-color: white;
+    color: #091434;
+}
+.range-title-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 450px 1fr;
+    padding: 20px 40px 80px 40px;
+    width: 100%;
+}
+.range-title-container .left-line{
+    height: 4px;
+    width: 0;
+    background: #091434;
+}
+.range-title-container .right-line{
+    width: 0;
+    margin-left: auto;
+    height: 4px;
+    background: #091434;
+}
+.titre-exp{
+    font-size: 40px;
+    text-align: center;
+    color: #091434;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+
+.comp-skill{
+    display: grid;
+    grid-template: repeat(2, 80px) / repeat(2, 500px);
+    grid-gap: 50px;
+    color: #091434;
+}
+.skill-box{
+    display: flex;
+    width: 100%;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+.skill-box img{
+    height: 48px;
+    width: 48px;
+    margin: 0 10px;
+}
+
+/* media range*/
+
+@media(max-width: 1300px){
+    .section-range{
+        padding-left: 0;
+    }
+}
+@media(max-width: 1100px){
+    .comp-skill{
+        display: grid;
+        grid-template: repeat(4, 80px) / 500px;
+    }
+    .titre-exp{
+        margin: 50px 0;
+    }
+}
+@media(max-width: 700px){
+    .comp-skill{
+        grid-template: repeat(4, 80px) / 400px;
+    }
+    .barre-grises{
+        width: 400px;
+    }
+} 
+@media(max-width: 450px){
+    .titre-exp{
+        font-size: 30px;
+    }
+    .comp-skill{
+        grid-template: repeat(4, 80px) / 300px;
+        grid-gap: 40px;
+    }
+}
+/*  add */
+@media (max-width: 992px) {
+    .range-title-container{
+        grid-template-columns: 1fr 350px 1fr;
+        padding: 0px 20px 40px 20px;
+    }
+}
+@media (max-width: 700px) {
+    .range-title-container{
+        grid-template-columns: 1fr 300px 1fr;
+        padding: 0px 10px 30px 10px;
+    }
+    .range-title-container h2{
+        font-size: 35px;
+    }
+}
+@media(max-width:500px){
+    .range-title-container{
+        grid-template-columns: 1fr 200px 1fr;
+        padding: 0px 0px 30px 0px;
+    }
+    .range-title-container h2{
+        font-size: 28px;
+    }
+    .cont-img-port{
+        height: auto;
+    }
+}
