@@ -57,7 +57,7 @@
 .item{
     margin: 40px;
     width: 420px;
-    height: 400px;
+    height: 410px;
     color: #14213d;
     display: flex;
     flex-direction: column;
@@ -142,23 +142,23 @@
     width: 30%;
     height: 35px;
     border-radius: 8px;
-    border: none;
     color: white;
     background: #b9bbbe;
     font-weight: 700;
     font-size: 20px;
     cursor: pointer;
+    line-height: 35px;
 }
 .item-hover-view{
     width: 60%;
     height: 35px;
     border-radius: 8px;
-    border: none;
     color: white;
     font-weight: 700;
     font-size: 16px;
     background: #343352;
     cursor: pointer;
+    line-height: 35px;
 }
 .item-hover-view i{
     margin-right: 15px;
@@ -189,8 +189,12 @@
 }
 .project-img-container img{
     min-height: 100%;
-    width: 101%;
+    width: 100%;
     object-fit: cover;
+}
+.project-img-container.groupomania img{
+    object-fit: fill;
+    width: 101%;
 }
 .item-container h2{
     text-align: center;

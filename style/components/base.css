@@ -29,4 +29,7 @@ body{
     height: 130%;
     display: none;
 }
+a{
+    text-decoration: none;
+}
 
