@@ -171,12 +171,8 @@
     display: flex;
     align-items: center;
     justify-content: start;
+    background: #36353a;
     border-bottom: 1px solid #091434;
-}
-.top-bar i{
-    color: #091434;
-    margin-left: 20px;
-    font-size: 20px;
 }
 .project-img-container{
     height: calc(100% - 25px);
@@ -186,6 +182,21 @@
     align-items: flex-start;
     justify-content: center;
     border-radius: 0  0 10px 10px;
+}
+.circle1{
+    font-size: 8px;
+    margin-left: 20px;
+    color: #eb6458;
+}
+.circle2{
+    font-size: 8px;
+    margin-left: 5px;
+    color: #e1c34f;
+}
+.circle3{
+    font-size: 8px;
+    margin-left: 5px;
+    color: #71bc47;
 }
 .project-img-container img{
     min-height: 100%;
