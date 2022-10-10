@@ -119,7 +119,8 @@ TL1
 
 
 window.addEventListener('load', () => {
-    TL1.play()
+    TL1.play();
+    main.play();
 })
 //*** END of Animation for home with Gsap ***/
 
@@ -385,7 +386,7 @@ const device = item => {
 // After returning all of the tl's you can create a master timeline to run all of the animations.
 //master timeline
 
-const main = gsap.timeline({delay: .5});
+const main = gsap.timeline({paused: true});
 main.timeScale(1.5)
 main.add('s')
 main
