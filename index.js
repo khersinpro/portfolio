@@ -4,13 +4,6 @@ const allItemNav = document.querySelectorAll('.nav-menu-item')
 const burger = document.querySelector('.burger')
 
 if(window.matchMedia('(max-width:992px)')){
-    window.addEventListener('click', (e) => {
-        console.log(e.target);
-        // if(nav.classList.contains('active')){
-        //     burger.classList.remove("active")
-        //     nav.classList.remove("active")
-        // }
-    })
     allItemNav.forEach(item => {
         item.addEventListener("click", () => {
             burger.classList.toggle("active")
