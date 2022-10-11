@@ -202,6 +202,9 @@ h1{
     .txt-animation{
         font-size: 15px!important;
     }
+    header{
+        min-height: 370px;
+    }
 }
 @media(max-width: 370px) {
     .txt-animation{
