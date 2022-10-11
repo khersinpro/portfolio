@@ -1,22 +1,22 @@
 /***************** HOME *****************/
 header{
     height: 100vh;
+    min-height: 540px;
     width: 100%;
     position: relative;
     overflow: hidden;
 }
-
 .accueil{
-    background: white;
+    background: #304340;
     width: 100%;
     height: 100%;
 }
 h1{
-    padding-top: 180px;
+    padding-top: 100px;
     font-size: 80px;
     font-family: 'Inter', sans-serif;
     margin: 0 60px;
-    color: #091434;
+    color: #ffffff;
     font-weight: 400;
     transform: translateY(-110px);
     opacity: 0;
@@ -24,7 +24,7 @@ h1{
 .txt-animation{
     font-size: 30px;
     margin: 10px 0  10px 60px;
-    color: #343352;
+    color: #ffffff;
     position: relative;
     z-index: 1;
 }
@@ -33,12 +33,12 @@ h1{
     width: 200px;
     height: 50px;
     text-decoration: none;
-    color: white;
-    background: #343352;
+    color: #304340;
+    background: #DEAD68;
     justify-content: center;
     align-items: center;
     margin: 10px 0 0 0;
-    border-radius: 2px;
+    border-radius: 25px;
     font-size: 18px;
     opacity: 0;
     transform: scaleY(0);
@@ -51,8 +51,8 @@ h1{
 }
 .btn-acc2{
     background: transparent;
-    border: 3px solid #343352;
-    color: #343352;
+    border: 3px solid #DEAD68;
+    color: #DEAD68;
     font-weight: 700;
 }
 .medias{
@@ -64,7 +64,7 @@ h1{
 .media{
     height: 60px;
     width: 60px;
-    background-color: #343352;
+    background-color: #F0E6DA;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -82,7 +82,8 @@ h1{
     z-index: 1;
     width: 60%;
     background: transparent;
-    transform: rotate3d(0,1,0,-180deg);
+    transform: rotate3d(0,1,0,180deg);
+
     top: 250px;
     right:-100px;
 }
@@ -93,14 +94,21 @@ h1{
     width: 105%;
     height: 40%;
     transform: rotate(180deg);
-
 }
+.pseudo_wave{
+    position: absolute;
+    bottom: -2px;
+    height: 45px;
+    background: #F0E6DA;
+    width: 100%;
+    border-radius: 60% 60% 0 0;
+}
+
 /* media home */
 @media(max-width:1200px) {
     h1{
         font-size: 70px;
         margin: 0 30px 0 30px;
-        padding-top: 100px;
     }
     .accueil p{
         margin: 20px 0 20px 30px;

@@ -5,9 +5,10 @@
     background: #9368332a;
     background-color: #DEF2F1;
     background-color: white;
+    background-color: #DEAD68;
     /* background: rgb(245,245,245);
     background: linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 40%); */
-    color: #091434;
+    color: #2F423F;
     position: relative;
     overflow: hidden;
     padding-top: 50px;
@@ -17,28 +18,30 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 450px 1fr;
-    padding: 40px 40px 80px 40px;
+    padding: 0px 40px;
+    margin: 60px 0 80px;
     width: 100%;
     position: relative;
     z-index: 2;
 }
 .pres-title-container .left-line{
-    height: 4px;
+    height: 2px;
     width: 0;
-    background: #091434;
+    background: #2F423F;
 }
 .pres-title-container .right-line{
     width: 0;
     margin-left: auto;
-    height: 4px;
-    background: #091434;
+    height: 2px;
+    background: #2F423F;
 }
 
 .titre-pres{
     font-size: 40px;
     text-align: center;
-    color: #091434;
+    color: #2F423F;
     transform: translateY(-100px);
+    font-weight: 600;
     opacity: 0;
 }
 .container-presentation{
@@ -46,7 +49,7 @@
     width: 100%;
     justify-content: center;
     align-items: flex-start;
-    margin: 50px 0 50px 0;
+    margin: 50px 0 170px 0;
     flex-shrink: 0;
 }
 .about-img-pres{
@@ -80,7 +83,7 @@
 .pres-gauche p{
     font-size: 22px;
     letter-spacing: 0.2px;
-    color: #343352;
+    color: #2F423F;
 }
 .wave-pres{
     position: absolute;
@@ -90,7 +93,22 @@
     width: 105%;
     height: 150px;
     z-index: 1;
-    
+}
+.pres-pseudo-wave{
+    position: absolute;
+    top: -2px;
+    height: 45px;
+    background: #F0E6DA;
+    width: 100%;
+    border-radius: 0% 0% 60% 60%;
+}
+.pres-pseudo-waveBottom{
+    position: absolute;
+    bottom: -2px;
+    height: 45px;
+    background: #F0E6DA;
+    width: 100%;
+    border-radius: 60% 60% 0% 0% ;
 }
 
 /* PRESENTATION MEDIA */
@@ -162,6 +180,7 @@
     .pres-title-container{
         grid-template-columns: 1fr 250px 1fr;
         padding: 0px 0px 30px 0px;
+        margin: 40px 0 50px;
     }
     .titre-pres{
         font-size: 28px;
@@ -170,22 +189,3 @@
         height: auto;
     }
 }
-/* @media(max-width: 700px){
-    .container-presentation{
-        margin-top: 10px;
-        margin-bottom: 70px;
-    }
-    .titre-pres{
-        font-size: 24px;
-        margin: 0 10px;
-    }
-    .pres-gauche h3{
-        font-size: 20px;
-    }
-    .chiffre-style{
-        font-size: 20px;
-    }
-    .txt-liste{
-        font-size: 17px;
-    }
-} */

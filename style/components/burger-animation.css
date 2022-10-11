@@ -1,23 +1,33 @@
 /* burger button animation */
+.burger-container{
+    display: none;
+    height: 50px;
+    width: 100%;
+    padding: 0 25px;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #304340;
+    z-index: 4;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
 .burger{
     height: 26px;
     width: 32px;
     display: none;
     flex-direction: column;
-    z-index: 4;
     background: transparent;
     cursor: pointer;
     border: none;
-    position: fixed;
-    top: 25px;
-    right: 25px;
 }
 .burger--line{
     display: block;
     height: 4px;
     width: 100%;
     border-radius: 2px;
-    background: #000;
+    background: #fff;
 }
 .burger--line1{
     transform: rotate(0deg);
@@ -44,6 +54,9 @@
     transform: rotate(-47deg);
 }
 @media (max-width: 992px) {
+    .burger-container{
+        display: flex;
+    }
     .burger{
         display: flex;
         justify-content: space-between;

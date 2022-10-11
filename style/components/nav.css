@@ -2,7 +2,6 @@
 .nav-left{
     width: 100%;
     height: 80px;
-    position: fixed;
     top: 0;
     z-index: 3;
     transition: all 0.6s ease-in-out;
@@ -10,21 +9,7 @@
     align-items: center;
     justify-content: end;
     flex-direction: row;
-}
-@media (min-width: 992px) {
-    .nav-left.color{
-        height: 60px;
-        background: #09143483;
-        background: white;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-    
-    .nav-left.color span::after{
-        background: white;
-    }
-    .nav-left.remove{
-        transform: translateY(-80px);
-    }
+    background: #304340;
 }
 #nav-logo{
     height: 75px;
@@ -48,8 +33,7 @@
 }
 .blocs-menu span a{
     text-decoration: none;
-    color: white;
-    color: #091434;
+    color: #F0E6DA;
     font-weight: 500;
     transition: 0.6 ease;
 }
@@ -60,7 +44,7 @@
     margin: 5px auto 0 auto;
     height: 2px;
     border-radius: 2px;
-    background-color:#091434;
+    background-color:#F0E6DA;
     transition: all 0.2s;
 }
 .blocs-menu span:hover::after{
@@ -79,6 +63,7 @@
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         padding-top: 150px;
+        z-index: 5;
     }
     .nav-left.active {
         left: 0;
@@ -101,8 +86,7 @@
     }
     .blocs-menu span a{
         text-decoration: none;
-        color: white;
-        color: #091434;
+        color: #304340;
         font-weight: 500;
         transition: 0.6 ease;
     }
@@ -113,7 +97,7 @@
         margin: 5px auto 0 auto;
         height: 2px;
         border-radius: 2px;
-        background-color:#091434;
+        background-color: #304340;
         transition: all 0.2s;
     }
     .blocs-menu span:hover::after{

@@ -7,7 +7,7 @@
     background: #171717;
     background: #9368332a;
     background-color: #DEF2F1;
-    background-color: white;
+    background-color: #F0E6DA;
     padding-bottom: 70px;
     position: relative;
 }
@@ -15,25 +15,25 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 550px 1fr;
-    padding: 40px 40px 80px 40px;
+    padding: 40px 40px 80px;
     width: 100%;
 }
 .contact-title-container .left-line{
-    height: 4px;
+    height: 2px;
     width: 0%;
-    background: #091434;
+    background: #2F423F;
 }
 .contact-title-container .right-line{
     width: 0%;
     margin-left: auto;
-    height: 4px;
-    background: #091434;
+    height: 2px;
+    background: #2F423F;
 }
 .section-contact h2 {
     text-align: center;
-    color: #091434;
+    color: #2F423F;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 50px;
     margin: 0!important;
     padding: 0!important;
@@ -56,7 +56,7 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    color: #091434;
+    color: #2F423F;
     font-size: 20px;
     transition: 0.4s ease-out;
 }
@@ -67,8 +67,8 @@
     border: none;
     outline: none;
     background: none;
-    border-bottom: 3px solid #091434;
-    color: #091434;
+    border-bottom: 3px solid #2F423F;
+    color: #2F423F;
     font-size: 20px;
     transition: 0.4s ease-out;
 }
@@ -76,7 +76,7 @@ textarea {
     width: 100%;
     height: 200px;
     border: none;
-    border: 3px solid #091434;
+    border: 3px solid #2F423F;
     border-radius: 3px;
     padding: 5px;
     resize: none;
@@ -85,7 +85,7 @@ textarea {
     transition: 0.4s all ease-out;
     background: #e5e5e5;
     padding: 20px;
-    color: #091434;
+    color: #2F423F;
     font-weight: 600;
 }
 textarea::placeholder {
@@ -102,11 +102,11 @@ textarea::placeholder {
     display: block;
     width: auto;
     padding: 15px 60px;
-    border: 3px solid #091434;
+    border: 3px solid #2F423F;
     border-radius: 999px;
     background-image: linear-gradient(to right,#e5e5e5 50%, transparent 50%);
     background-size: 240%;
-    color: #091434;
+    color: #2F423F;
     font-size: 24px;
     font-weight: 600;
     cursor: pointer;
