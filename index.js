@@ -17,7 +17,6 @@ if(window.matchMedia('(max-width:992px)')){
 }
 
 
-
 //*** Portfolio open info onclick on tablet/mobile device  ***/
 const allPortfolioItems = document.querySelectorAll(".item");
 

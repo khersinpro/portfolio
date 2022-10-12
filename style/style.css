@@ -2,6 +2,7 @@
 @import "./components/base.css";
 @import "./components/nav.css";
 @import "./components/burger-animation.css";
+@import "./components/chevron-animation.css";
 @import "./components/home.css";
 @import "./components/portfolio.css";
 @import "./components/about.css";

@@ -1,3 +1,37 @@
-.chevron-animation{
-    
+.btn-rond{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom:20px;
+    right: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #DEAD68;
+    background: #DEAD68;
+    animation: pulse 1.3s infinite;
+    transform: translateY(-50px);
+}
+.logo-btn-rond-acc{
+    height: 33px;
+    width: 33px;
+}
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 8px #DEAD680a ;
+    }
+}
+@media (max-width: 500px) {
+    .btn-rond{
+        height: 50px;
+        width: 50px;
+        bottom:20px;
+        right: 60px;
+    }
+    .logo-btn-rond-acc{
+        height: 22px;
+        width: 22px;
+    }
 }
