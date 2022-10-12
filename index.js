@@ -21,23 +21,27 @@ if(window.matchMedia('(max-width:992px)')){
 //*** Portfolio open info onclick on tablet/mobile device  ***/
 const allPortfolioItems = document.querySelectorAll(".item");
 
-if(window.matchMedia('(max-width:992px)').matches){
-    allPortfolioItems.forEach(item => {
-        item.addEventListener('click', e => {
+
+allPortfolioItems.forEach(item => {
+    item.addEventListener('click', e => {
+        if(window.matchMedia('(max-width:992px)').matches){
             item.querySelector('.item-hover-info').classList.toggle('openResponsive');
             item.querySelectorAll("button").forEach(item => {
                 item.addEventListener('click', e => {
                     e.stopPropagation()
                 })
             })
-        })
+        }
     })
-    window.addEventListener("scroll" , () => {
+})
+window.addEventListener("scroll" , () => {
+    if(window.matchMedia('(max-width:992px)').matches){
         allPortfolioItems.forEach(item => {
             item.querySelector('.item-hover-info').classList.remove('openResponsive')
         })
-    }) 
-}
+    }
+}) 
+
 //*** END of Portfolio open info onclick on tablet/mobile device  ***/
 
 //*** TypeWriter annimation ***//
