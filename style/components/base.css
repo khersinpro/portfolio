@@ -7,10 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    /* font-family: "Poppins", sans-serif; */
     font-family: 'Inter', sans-serif!important;
-    font-family: 'Poppins', sans-serif;
-    background: #F1F1F1;
 }
 .circle-absolute{
     position: absolute;

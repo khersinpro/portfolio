@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "./components/base.css";
 @import "./components/nav.css";
 @import "./components/burger-animation.css";
@@ -7,7 +6,6 @@
 @import "./components/portfolio.css";
 @import "./components/about.css";
 @import "./components/skills.css";
-@import "./components/exp.css";
 @import "./components/contact.css";
 
 

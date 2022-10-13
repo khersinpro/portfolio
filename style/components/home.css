@@ -77,24 +77,6 @@ h1{
 .icone-medias{
     width: 30px;
 }
-.media-svg{
-    position: absolute;
-    z-index: 1;
-    width: 60%;
-    background: transparent;
-    transform: rotate3d(0,1,0,180deg);
-
-    top: 250px;
-    right:-100px;
-}
-.bg-desk{
-    position: absolute;
-    bottom: -2px;
-    left: -10px;
-    width: 105%;
-    height: 40%;
-    transform: rotate(180deg);
-}
 .pseudo_wave{
     position: absolute;
     bottom: -2px;
