@@ -182,7 +182,7 @@
     overflow: hidden;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     border-radius: 0  0 10px 10px;
 }
 .circle1{
@@ -204,6 +204,12 @@
     min-height: 100%;
     width: 100%;
     object-fit: cover;
+}
+.project-img-container img:nth-child(1){
+    height: auto;
+}
+.project-img-container img:nth-child(2){
+    height: auto;
 }
 .project-img-container.groupomania img{
     object-fit: fill;
